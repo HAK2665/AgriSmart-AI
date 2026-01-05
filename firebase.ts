@@ -7,13 +7,13 @@ import { getFirestore } from 'firebase/firestore';
 // All keys are left as empty strings per project guidelines. 
 // Use environment variables for production.
 const firebaseConfig = {
-  apiKey: "AIzaSyATQhXSsys3B6TpZsEOV0lm3oEvlREeYXk",
-  authDomain: "agrismart-ai-10b16.firebaseapp.com",
-  projectId: "agrismart-ai-10b16",
-  storageBucket: "agrismart-ai-10b16.firebasestorage.app",
-  messagingSenderId: "777144264414",
-  appId: "1:777144264414:web:67c72f5364e5a6c589044f",
-  measurementId: "G-LH2ZW015N6"
+  apiKey: "",                           //------------------------------
+  authDomain: "",                       //ADD                          |
+  projectId: "",                        //FIREBASE                     |
+  storageBucket: "",                    //CONFIGURATION                |
+  messagingSenderId: "",                //HERE IN                      |
+  appId: "",                            //firebaseConfig               |
+  measurementId: ""                     //------------------------------
 };
 
 const app = initializeApp(firebaseConfig);
