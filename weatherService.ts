@@ -1,6 +1,6 @@
 import { WeatherData } from './types';
 
-const WEATHER_API_KEY = 'c7ebe2a6e5ec3a558b01eff8d42bb827';
+const WEATHER_API_KEY = //ENTER WEATHER API KEY;
 const OPENWEATHERMAP_API = 'https://api.openweathermap.org/data/2.5';
 const GEOCODING_API = 'https://api.openweathermap.org/geo/1.0/direct';
 
@@ -264,3 +264,4 @@ export const getAgricultureWarning = (weatherCode: number): string | null => {
   }
   return null;
 };
+
