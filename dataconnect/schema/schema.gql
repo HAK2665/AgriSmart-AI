@@ -1,0 +1,47 @@
+type User @table {
+  displayName: String!
+  email: String!
+  createdAt: Timestamp!
+  farmName: String
+  location: String
+  phoneNumber: String
+}
+
+type Farm @table {
+  name: String!
+  createdAt: Timestamp!
+  user: User
+  address: String
+  description: String
+  primaryCrop: String
+}
+
+type Field @table {
+  name: String!
+  size: Float!
+  createdAt: Timestamp!
+  farm: Farm
+  soilType: String
+  notes: String
+  currentCrop: String
+}
+
+type CropLog @table {
+  activityType: String!
+  activityDate: Date!
+  createdAt: Timestamp!
+  field: Field
+  quantity: Float
+  unit: String
+  notes: String
+}
+
+type Expense @table {
+  category: String!
+  amount: Float!
+  expenseDate: Date!
+  createdAt: Timestamp!
+  farm: Farm
+  description: String
+  vendor: String
+}

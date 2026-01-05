@@ -1,0 +1,7 @@
+{
+  "name": "AgriSmartBuddy AI",
+  "description": "A production-grade agricultural assistant for crop disease detection, soil analysis, and expert farming advice using Gemini AI.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

@@ -1,0 +1,41 @@
+mutation AddNewFarm($userId: UUID!, $name: String!, $description: String, $address: String, $primaryCrop: String) @auth(level: USER) {
+  farm_insert(data: {
+    userId: $userId,
+    name: $name,
+    description: $description,
+    address: $address,
+    primaryCrop: $primaryCrop
+  })
+}
+
+query GetFarmsByUserId($userId: UUID!) @auth(level: USER) {
+  farms(where: {userId: {eq: $userId}}) {
+    id
+    name
+    description
+    address
+    primaryCrop
+  }
+}
+
+mutation AddNewField($farmId: UUID!, $name: String!, $size: Float!, $soilType: String, $currentCrop: String, $notes: String) @auth(level: USER) {
+  field_insert(data: {
+    farmId: $farmId,
+    name: $name,
+    size: $size,
+    soilType: $soilType,
+    currentCrop: $currentCrop,
+    notes: $notes
+  })
+}
+
+query GetFieldsByFarmId($farmId: UUID!) @auth(level: USER) {
+  fields(where: {farmId: {eq: $farmId}}) {
+    id
+    name
+    size
+    soilType
+    currentCrop
+    notes
+  }
+}
