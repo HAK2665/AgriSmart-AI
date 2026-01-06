@@ -313,8 +313,9 @@ If you use this project, ⭐ star it and customize it to fit your innovation vis
 
 1. Install dependencies:
    `npm install`
-2. Set the Firebase configuration i.e, `firebaseconfig` in firebase.ts file
-3. Set the `GEMINI_API_KEY` and `EXPERT_SEARCH_API` in [.env.local](.env.local) to your Gemini API key (Two API keys will be needed)
-4. Set the `WEATHER_API` in weatherService.ts file
-5. Run the app:
+2. Fund dependencies using `npm fund`
+3. Set the Firebase configuration i.e, `firebaseconfig` in firebase.ts file
+4. Set the `GEMINI_API_KEY` and `EXPERT_SEARCH_API_KEY` in [.env.local](.env.local) to your Gemini API key (Two API keys will be needed)
+5. Set the `WEATHER_API_KEY` in weatherService.ts file
+6. Run the app:
    `npm run dev`
