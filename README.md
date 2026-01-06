@@ -319,3 +319,7 @@ If you use this project, ⭐ star it and customize it to fit your innovation vis
 5. Set the `WEATHER_API_KEY` in weatherService.ts file
 6. Run the app:
    `npm run dev`
+
+## MVP Link For App:
+Link 1: https://agrismart-ai-10b16.web.app
+Link 2: https://agrismart-ai-10b16.firebaseapp.com/
